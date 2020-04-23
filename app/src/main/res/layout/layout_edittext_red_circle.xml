@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <LinearLayout
+       android:id="@+id/linearContainer"
+       android:gravity="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/tvTitle"
+           android:textColor="#000000"
+           android:textSize="15sp"
+           tools:text="Module Name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+       <ImageView
+           android:layout_marginLeft="10dp"
+           android:layout_toRightOf="@id/tvTitle"
+           android:id="@+id/imgIcon"
+           android:src="@drawable/ic_red_circle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+   </LinearLayout>
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearContainer"
+        android:background="@android:color/transparent" />
+    <View
+        android:layout_below="@id/edittext"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</RelativeLayout>
